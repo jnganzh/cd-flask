@@ -45,7 +45,7 @@ def wikipedia_route(company):
     return str(entities)
 
 @app.route('/crypto')
-def crypto_route():
+def crypto():
     return redirect('https://www.coingecko.com/')
 
 
