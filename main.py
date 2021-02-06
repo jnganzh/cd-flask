@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import jsonify
+from flask import redirect
 import pandas as pd
 import wikipedia
 
