@@ -44,9 +44,6 @@ def wikipedia_route(company):
     entities = client.analyze_entities(request = {'document': document, 'encoding_type': encoding_type}).entities
     return str(entities)
 
-@app.route('/crypto')
-def crypto():
-    return redirect('https://www.coingecko.com/')
 
 
 
