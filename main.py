@@ -43,6 +43,8 @@ def wikipedia_route(company):
     entities = client.analyze_entities(request = {'document': document, 'encoding_type': encoding_type}).entities
     return str(entities)
 
-
+@app.route('/crypto')
+def crypto_route(company):
+    return redirect('https://www.coingecko.com/en')
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
